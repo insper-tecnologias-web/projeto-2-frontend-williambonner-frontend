@@ -1,6 +1,7 @@
 # projeto-2-frontend-williambonner-frontend
-projeto-2-frontend-williambonner-frontend created by GitHub Classroom
 
-Integrantes: Diogo dos Reis Duarte e Renato Laffranchi Falcão
+Projeto 2 de TecWeb - Backend
 
-API: IATACodes (https://rapidapi.com/airlabs/api/iatacodes/)
+Por Diogo dos Reis Duarte e Renato Laffranchi Falcão
+
+Vamos utilizar a [API IATACODES](https://rapidapi.com/airlabs/api/iatacodes/)
