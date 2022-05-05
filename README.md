@@ -1,6 +1,6 @@
 # projeto-2-frontend-williambonner-frontend
 
-Projeto 2 de TecWeb - Backend
+Projeto 2 de TecWeb - Frontend
 
 Por Diogo dos Reis Duarte e Renato Laffranchi Falcão
 
