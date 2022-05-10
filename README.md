@@ -4,8 +4,8 @@ Projeto 2 de TecWeb - Frontend
 
 Por Diogo dos Reis Duarte e Renato Laffranchi Falcão
 
-Vamos utilizar a [API Lufthansa Open](https://rapidapi.com/lihcode/api/lufthansa-open/)
+Vamos utilizar a [API Covid-19](https://rapidapi.com/api-sports/api/covid-193/)
 
-Funcionalidade 1: Devolver os vôos da Lufthansa
+Funcionalidade 1: Devolver os dados do brasil
 
-Funcionalidade 2: Conseguir favoritar vôos a escolha do usuário.
+Funcionalidade 2: Fazer uma comparação com um país de escolha do usuário
