@@ -9,3 +9,10 @@ Vamos utilizar a [API Covid-19](https://rapidapi.com/api-sports/api/covid-193/)
 Funcionalidade 1: Devolver os dados do brasil
 
 Funcionalidade 2: Fazer uma comparação com um país de escolha do usuário
+
+# Para o Desenvolvimento do Projeto:
+
+Para rodar a aplicação do react, navegue pelo prompt até o diretório do projeto git e utilize o comando:
+
+    npm start
+    
