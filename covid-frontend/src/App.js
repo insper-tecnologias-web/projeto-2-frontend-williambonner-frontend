@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import { useEffect, useState } from "react";
+import axios from "axios";
+import Note from "./components/Note";
 import './App.css';
 
 function App() {
+  // const [note, setNote] = useState([]);
+
+  // useEffect(() => {
+  //   axios
+  //   .get("")
+  //   .then((res) => setNote(res.data));
+  // }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="info-box">
+        <img className="covid-logo" src="/covid-logo.png" />
+        <Note />
+        <img className="covid-mask" src="/covid-mask.png" />
+      </div>
     </div>
   );
 }
