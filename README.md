@@ -16,3 +16,7 @@ Para rodar a aplicação do react, navegue pelo prompt até o diretório do proj
 
     npm start
     
+Para manter o Heroku sempre atualizado, usar o comando:
+
+    git push heroku main
+    
