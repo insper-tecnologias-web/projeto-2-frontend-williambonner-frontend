@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-export default function Note(props) {
+export default function Compare(props) {
 
   return (
     <div className="card">
