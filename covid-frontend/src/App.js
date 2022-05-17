@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     axios
-    .get("http://localhost:8000/api/brasil")
+    .get("https://enigmatic-hamlet-10547.herokuapp.com/api/brasil")
     .then((res) => {
       setNote(res.data);
     });
@@ -35,7 +35,7 @@ function App() {
     let message = `${country}`;
     console.log(message);
     axios
-      .post("http://localhost:8000/api/comparacao", message)
+      .post("https://enigmatic-hamlet-10547.herokuapp.com/api/comparacao", message)
       .then((res)=> {
         setOther(res.data);
         console.log(res.data);
