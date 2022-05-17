@@ -67,12 +67,12 @@ function App() {
           <button className="btn" type="submit" onClick={() => changeState("compara")}>Quero um comparativo com o Brasil!</button>
         </form>
         <div className="info-box">
-          <img className="covid-logo" src="/covid-logo.png" />
-          {estado == "brasil"
+          <img className="covid-logo" src="/covid-logo.png" alt="" />
+          {estado === "brasil"
             ? <Note Pais={note.Pais} NumNovosCasos={note.NumNovosCasos} NumCasos={note.NumCasos} NumNovasMortes={note.NumNovasMortes} NumMortes={note.NumMortes}></Note>
-            : <Compare Pais={otherNote.Pais} NumNovosCasos={otherNote.NumNovosCasos} NumCasos={otherNote.NumCasos} NumNovasMortes={otherNote.NumNovasMortes} NumMortes={otherNote.NumMortes}></Compare>
+            : <Compare NomePais1={note.Pais} NumNovosCasos1={note.NumNovosCasos} NumCasos1={note.NumCasos} NumNovasMortes1={note.NumNovasMortes} NumMortes1={note.NumMortes} NomePais2={otherNote.Pais} NumNovosCasos2={otherNote.NumNovosCasos} NumCasos2={otherNote.NumCasos} NumNovasMortes2={otherNote.NumNovasMortes} NumMortes2={otherNote.NumMortes}></Compare>
           }
-          <img className="covid-mask" src="/covid-mask.png" />
+          <img className="covid-mask" src="/covid-mask.png" alt="" />
         </div>
 
     </div>
