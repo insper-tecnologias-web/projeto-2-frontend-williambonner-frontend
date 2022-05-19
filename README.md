@@ -1,5 +1,7 @@
 # projeto-2-frontend-williambonner-frontend
 
+Link para o Heroku: https://infinite-ridge-79594.herokuapp.com/
+
 Projeto 2 de TecWeb - Frontend
 
 Por Diogo dos Reis Duarte e Renato Laffranchi Falcão
