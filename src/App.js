@@ -6,7 +6,6 @@ import './App.css';
 
 function App() {
 
-  // var estado = "brasil";
   const [estado, setEstado] = useState("brasil");
 
   function changeState(new_state) {
@@ -20,10 +19,19 @@ function App() {
 
   useEffect(() => {
     axios
-    .get("https://enigmatic-hamlet-10547.herokuapp.com/api/brasil")
+    .get("https://enigmatic-hamlet-10547.herokuapp.com")
     .then((res) => {
-      setNote(res.data);
-    });
+      let message = {'data': 'Brasil'};
+      axios
+      .post("https://enigmatic-hamlet-10547.herokuapp.com/api/save", message)
+      .then((res) => {
+        axios
+        .post("https://enigmatic-hamlet-10547.herokuapp.com/api/get", message)
+        .then((res) => {
+          setNote(res.data);
+        })
+      });
+    })
   }, []);
 
   const changeCountry = (event) => {
@@ -32,13 +40,15 @@ function App() {
 
   function getCountryData(event) {
     event.preventDefault()
-    let message = `${country}`;
-    console.log(message);
+    let message = {'data':country};
     axios
-      .post("https://enigmatic-hamlet-10547.herokuapp.com/api/comparacao", message)
+      .post("https://enigmatic-hamlet-10547.herokuapp.com/api/save", message)
       .then((res)=> {
-        setOther(res.data);
-        console.log(res.data);
+        axios
+        .post("https://enigmatic-hamlet-10547.herokuapp.com/api/get", message)
+        .then((res) => {
+          setOther(res.data);
+        })
       });
   }
 
@@ -52,15 +62,15 @@ function App() {
             onChange={changeCountry}
           >
             <option value={"Argentina"}>Argentina</option>
-            <option value={"Bolivia"}>Bolívia</option>
+            <option value={"Bolívia"}>Bolívia</option>
             <option value={"Chile"}>Chile</option>
-            <option value={"Colombia"}>Colômbia</option>
-            <option value={"Ecuador"}>Equador</option>
-            <option value={"Guyana"}>Guiana</option>
-            <option value={"Paraguay"}>Paraguai</option>
+            <option value={"Colômbia"}>Colômbia</option>
+            <option value={"Equador"}>Equador</option>
+            <option value={"Guiana"}>Guiana</option>
+            <option value={"Paraguai"}>Paraguai</option>
             <option value={"Peru"}>Peru</option>
             <option value={"Suriname"}>Suriname</option>
-            <option value={"Uruguay"}>Uruguai</option>
+            <option value={"Uruguai"}>Uruguai</option>
             <option value={"Venezuela"}>Venezuela</option>
             
           </select>
